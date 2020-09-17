@@ -1,26 +1,40 @@
 {
   "expo": {
-    "name": "Salary",
-    "slug": "Salary",
+    "name": "NEW APP",
+    "slug": "new-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#222B45"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.myapp.bundle.id",
+      "appStoreUrl": "https://apps.apple.com/us/app/my-app-slug-here/id123456789",
+      "buildNumber": "1.0.0",
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ADMOB_APPID"
+      }
+    },
+    "android": {
+      "package": "com.myapp.package.id",
+      "versionCode": 1,
+      "playStoreUrl": "https://play.google.com/store/apps/details?id=com.myapp.package.id",
+      "config": {
+        "googleMobileAdsAppId": "ADMOB_APPID"
+      },
+      "permissions": []
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "description": ""
   }
 }
